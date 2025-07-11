@@ -1,18 +1,23 @@
-# OTP Document Upload App (Final)
+# OTP Document Upload App
 
-This project includes:
+This project includes both frontend and backend code for OTP-based login and document upload functionality.
 
-- `dmsapp/`: React Native frontend with OTP login and document upload
-- `mock-backend/`: Node.js Express backend for OTP validation and file storage
+## 📱 Frontend (React Native - Expo)
+- Path: `dmsapp/`
+- Install: `cd dmsapp && npm install`
+- Run: `npx expo start`
+- Features: OTP login, document date selector, file picker (PDF/image), camera capture
 
-### How to Run
+## 🌐 Backend (Node.js + Express)
+- Path: `mock-backend/`
+- Install: `cd mock-backend && npm install`
+- Create folder: `uploads`
+- Run: `node server.js`
+- Features: OTP generation and verification, file upload with metadata
 
-#### Backend:
-cd mock-backend  
-npm install  
-node server.js
+## 🔐 Auth
+- Dummy token returned on OTP verification
+- Token used to authorize document upload
 
-#### Frontend:
-cd dmsapp  
-npm install  
-npx expo start
+## ✅ Folder Structure
+
